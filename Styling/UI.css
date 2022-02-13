@@ -1,0 +1,23 @@
+/* Font */
+
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    background-color: rgb(253, 251, 251);
+}
+
+.mainborder {
+    position: relative;
+    margin: auto;
+    background-color: lightgrey;
+    width: 55%;
+    border-radius: 1.7rem;
+    padding: 380px 30px;
+    margin: 20px;
+    top: 10vh;
+    left: 34vh;
+    background-color: #0e0101;
+    background-image: linear-gradient(135deg, #0e0101 0%, #451313 33%, #b12525 76%, #f55c1f 100%);
+}
