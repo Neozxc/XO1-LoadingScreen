@@ -34,7 +34,7 @@ body {
 
 .servername h1 {
     margin-left: -0.6rem;
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
 .servername p {
@@ -154,6 +154,22 @@ body {
     top: 0.8rem;
     left: 26rem;
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.servericon {
+    width: 50px;
+    height: 50px;
+    top: 0.1rem;
+    left: 2.9rem;
+    position: absolute;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
@@ -372,7 +388,7 @@ img {
     width: 35%;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .aboveyoutube h1 {

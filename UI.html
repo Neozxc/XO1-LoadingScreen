@@ -13,6 +13,9 @@
     <div class="mainborder"></div>
     <!-- Server Name -->
     <div class="servername">
+        <div class="servericon">
+            <img src="https://cdn.discordapp.com/attachments/897994953907666954/942928385938706462/Nss.gif" alt="">
+        </div>
         <h1>XO1-Name</h1>
         <p>server where you can be you.</p>
     </div>
@@ -24,7 +27,7 @@
         <h1 class="staff">Staff</h1>
         <div>
             <div class="profile">
-                <img src="https://cdn-icons-png.flaticon.com/512/949/949635.png" alt="">
+                <img src="https://cdn.discordapp.com/attachments/897994953907666954/942925616662065152/owner.png" alt="">
             </div>
             <div>
                 <p class="duty">Owner</p>
@@ -33,7 +36,7 @@
         </div>
         <div>
             <div class="profile">
-                <img src="https://cdn-icons.flaticon.com/png/512/3271/premium/3271001.png?token=exp=1644862594~hmac=6f9b526948dd16363e914d8f2a46b771" alt="">
+                <img src="https://cdn.discordapp.com/attachments/897994953907666954/942925617081487380/developer.png" alt="">
             </div>
             <div>
                 <p class="duty">Developer</p>
@@ -42,7 +45,7 @@
         </div>
         <div>
             <div class="profile">
-                <img src="https://cdn-icons-png.flaticon.com/512/6705/6705541.png" alt="">
+                <img src="https://cdn.discordapp.com/attachments/897994953907666954/942925616850825287/admin.png" alt="">
             </div>
             <div>
                 <p class="duty">Admin</p>
@@ -51,7 +54,7 @@
         </div>
         <div>
             <div class="profile">
-                <img src="https://cdn-icons.flaticon.com/png/512/4664/premium/4664524.png?token=exp=1644864214~hmac=8ea4cee94ae97b0328c8cbab3d3dd8d5" alt="">
+                <img src="https://cdn.discordapp.com/attachments/897994953907666954/942925617467392060/moderator.png" alt="">
             </div>
             <div>
                 <p class="duty">Moderator</p>
@@ -61,7 +64,7 @@
         <!-- Discord -->
         <h1 class="discord">Discord</h1>
         <div class="discordprofile">
-            <img src="https://cdn-icons.flaticon.com/png/512/2585/premium/2585184.png?token=exp=1644863844~hmac=c1c1acef4db001fa49cdcecd8fcbed4b" alt="">
+            <img src="https://cdn.discordapp.com/attachments/897994953907666954/942925617299607702/discord.png" alt="">
         </div>
         <div>
             <p class="joinus">Join us today!</p>
@@ -106,6 +109,14 @@
     <div class="aboveyoutube">
         <h1>Fancy some memes while we load you in?</h1>
     </div>
+
+    <audio id="audio" class="musicplayer" autoplay controls loop>
+        <source src="song.mp3" type="audio/mp3">
+            <script>
+                const audio = document.getElementById("audio");
+                audio.volume = 0.1;
+            </script>
+    </audio>
 </body>
 
 <!-- To get the video you want first go to youtube, find your video
@@ -121,14 +132,6 @@ and replace it with below one.
 <iframe width="420" height="315" class="youtube"
     src="https://www.youtube.com/embed/HxflFhf5rRA">
 </iframe>
-
-<audio id="audio" class="musicplayer" autoplay controls>
-    <source src="song.mp3" type="audio/mp3">
-        <script>
-            const audio = document.getElementById("audio");
-            audio.volume = 0.1;
-        </script>
-</audio>
 
 <!-- Script Link -->
 <script src="Styling/UI.js"></script>
