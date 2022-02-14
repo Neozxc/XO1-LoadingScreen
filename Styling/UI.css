@@ -1,23 +1,172 @@
 /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@200&display=swap');
 
 * {
     margin: 0; padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-color: rgb(253, 251, 251);
+    background-image: url("https://w.wallhaven.cc/full/9m/wallhaven-9mel2k.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servername {
+    position: absolute;
+    left: 27rem;
+    top: 10rem;
+    color: white;
+    opacity: 0.8;
+}
+
+.servername h1 {
+    margin-left: -0.6rem;
+    padding-top: 40px;
+}
+
+.servername p {
+    position: absolute;
+    width: 200%;
+    left: -1.8rem;
+    color: gray;
 }
 
 .mainborder {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
     position: relative;
     margin: auto;
     background-color: lightgrey;
-    width: 55%;
+    max-width: 56%;
+    top: 8rem;
+    left: -1rem;
     border-radius: 1.7rem;
     padding: 380px 30px;
-    margin: 20px;
-    top: 10vh;
-    left: 34vh;
     background-color: #0e0101;
     background-image: linear-gradient(135deg, #0e0101 0%, #451313 33%, #b12525 76%, #f55c1f 100%);
+}
+
+.verticaline { 
+    border-left: 1px solid gray;
+    opacity: 0.4;
+    min-height: 760px;
+    position: fixed;
+    margin-left: 39.5rem;
+    margin-top: -39.5rem;
+}
+
+.staff {
+    position: relative;
+    margin-left: 29.6rem;
+    margin-top: -32rem;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid gray;
+    width: 3%;
+}
+
+.discord {
+    position: relative;
+    margin-left: 28.5rem;
+    margin-top: 3.5rem;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid gray;
+    width: 5.4%;
+}
+
+.duty {
+    font-size: 18px;
+    position: relative;
+    margin-left: 30.3rem;
+    margin-top: -3vh;
+    padding-bottom: 12px;
+    color: white;
+    opacity: 0.8;
+}
+
+.name {
+    font-size: 13px;
+    position: relative;
+    margin-left: 30.8rem;
+    margin-top: -1.1vh;
+    color: gray;
+}
+
+.joinus {
+    font-size: 18px;
+    position: relative;
+    margin-left: 30.3rem;
+    margin-top: -3vh;
+    padding-bottom: 12px;
+    color: white;
+    opacity: 0.8;
+}
+
+.joinus2 {
+    font-size: 12px;
+    position: relative;
+    margin-left: 30.7rem;
+    margin-top: -1.1vh;
+    color: coral;
+    opacity: 0.8;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    top: 0.9rem;
+    left: 26rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+.discordprofile {
+    width: 50px;
+    height: 50px;
+    top: 0.8rem;
+    left: 26rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+
+  
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.musicplayer {
+    position: relative;
+    left: 25.8rem;
+    top: 6.5rem;
+    opacity: 0.8;
+    max-width: 10%;
+}
+
+.moveEverything {
+    padding-top: 5rem;
 }
