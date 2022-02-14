@@ -109,14 +109,6 @@
     <div class="aboveyoutube">
         <h1>Fancy some memes while we load you in?</h1>
     </div>
-
-    <audio id="audio" class="musicplayer" autoplay controls loop>
-        <source src="song.mp3" type="audio/mp3">
-            <script>
-                const audio = document.getElementById("audio");
-                audio.volume = 0.1;
-            </script>
-    </audio>
 </body>
 
 <!-- To get the video you want first go to youtube, find your video
@@ -132,6 +124,14 @@ and replace it with below one.
 <iframe width="420" height="315" class="youtube"
     src="https://www.youtube.com/embed/HxflFhf5rRA">
 </iframe>
+ 
+<audio id="audio" class="musicplayer" autoplay loop controls>
+    <source src="song.mp3" type="audio/mp3">
+        <script>
+            const audio = document.getElementById("audio");
+            audio.volume = 0.1;
+        </script>
+</audio>
 
 <!-- Script Link -->
 <script src="Styling/UI.js"></script>

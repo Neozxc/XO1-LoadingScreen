@@ -7,6 +7,7 @@ version '1.0.0'
 author 'Nss'
 
 files {
+    'song.mp3',
     'UI.html',
     'Styling/UI.css'
 }
