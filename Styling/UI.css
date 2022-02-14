@@ -12,6 +12,18 @@ body {
     background-repeat: no-repeat;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .servername {
     position: absolute;
     left: 27rem;
@@ -43,8 +55,9 @@ body {
     left: -1rem;
     border-radius: 1.7rem;
     padding: 380px 30px;
-    background-color: #0e0101;
-    background-image: linear-gradient(135deg, #0e0101 0%, #451313 33%, #b12525 76%, #f55c1f 100%);
+    background: linear-gradient(-45deg, #0e0101, #451313, #4f25b1, #3d1345);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .verticaline { 
@@ -163,7 +176,6 @@ img {
     position: relative;
     left: 25.8rem;
     top: -2rem;
-    opacity: 0.8;
     max-width: 10%;
 }
 
@@ -174,49 +186,201 @@ img {
 .ruleborder {
     position: absolute;
     width: 15%;
-    left: 80rem;
+    left: 82rem;
     top: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: lightgrey;
     border-radius: 2rem;
-    padding: 200px 0;
-    transform: rotate(-20deg);
+    padding: 100px 0;
+    transform: rotate(0deg);
 }
 
-.rules {
-    font-family: 'Raleway', sans-serif;
+.ruleborder h1 {
     position: absolute;
-    color: white;
-    left: 79rem;
-    top: 14rem;
-    transform: rotate(-20deg);
-    font-size: 16px;
+    left: 7.8rem;
+    top: 1rem;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
 }
 
-.rulelist {
-    opacity: 0.7;
+.ruleborder p {
     position: absolute;
-    color: black;
-    left: 81.8rem;
-    top: 13rem;
-    transform: rotate(-20deg);
-    list-style-type: none;
-    font-size: 20px;
-    line-height: 37px;    
+    left: 1.2rem;
+    top: 4rem;
+    color: gray;
 }
 
-/* .ruleborder2 {
+.ruleborder2 {
     position: absolute;
     width: 15%;
-    left: 90rem;
-    top: 30rem;
+    left: 62rem;
+    top: 10rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
     opacity: 0.7;
     background-color: lightgrey;
     border-radius: 1.7rem;
-    padding: 200px 0;
-    transform: rotate(10deg);
-} */
+    padding: 100px 0;
+    transform: rotate(0deg);
+}
 
-/* Music */
+.ruleborder2 h1 {
+    position: absolute;
+    left: 7.4rem;
+    top: 1rem;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+}
+
+.ruleborder2 ul {
+    position: absolute;
+    top: 4rem;
+    left: 1.2rem;
+    list-style-type: none;
+    color: gray;
+}
+
+.ruleborder3 {
+    position: absolute;
+    width: 15%;
+    left: 42rem;
+    top: 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    opacity: 0.7;
+    background-color: lightgrey;
+    border-radius: 1.7rem;
+    padding: 100px 0;
+    transform: rotate(0deg);
+}
+
+.ruleborder3 h1 {
+    position: absolute;
+    left: 5.5rem;
+    top: 1rem;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+}
+
+.ruleborder3 p {
+    position: absolute;
+    left: 1.2rem;
+    top: 4rem;
+    color: gray;
+}
+
+.loading {
+    position: absolute;
+    left: 82rem;
+    top: 52rem;
+    color: white;
+    opacity: 0.7;
+    font: 100;
+}
+
+.dotanim {
+    opacity: 0.7;
+    position: absolute;
+    left: 8.3rem;
+    top: 1.5rem;
+}
+.dot-falling {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    box-shadow: 9999px 0 0 0 white;
+    animation: dotFalling 1s infinite linear;
+    animation-delay: .1s;
+  }
+  
+  .dot-falling::before, .dot-falling::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot-falling::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFallingBefore 1s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-falling::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFallingAfter 1s infinite linear;
+    animation-delay: .2s;
+  }
+  
+  @keyframes dotFalling {
+    0% {
+      box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 9999px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+  
+  @keyframes dotFallingBefore {
+    0% {
+      box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 9984px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+  
+  @keyframes dotFallingAfter {
+    0% {
+      box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+    }
+    25%,
+    50%,
+    75% {
+      box-shadow: 10014px 0 0 0 white;
+    }
+    100% {
+      box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+    }
+  }
+
+.youtube {
+    position: absolute;
+    top: 29.5rem;
+    left: 45rem;
+    width: 35%;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.aboveyoutube h1 {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 26rem;
+    left: 53rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
