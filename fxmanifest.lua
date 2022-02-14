@@ -2,7 +2,7 @@ fx_version 'cerulean'
 
 game {'gta5'}
 
-description 'XO1-loadingscreen'
+description 'XO1-loadingScreen'
 version '1.0.0'
 author 'Nss'
 
